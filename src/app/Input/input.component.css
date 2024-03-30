@@ -19,3 +19,12 @@ span.error{
   color: crimson;
   font-style: oblique;
 }
+input:invalid + span::after {
+  content: "✖";
+  padding-left: 5px;
+}
+
+input:valid + span::after {
+  content: "✓";
+  padding-left: 5px;
+}

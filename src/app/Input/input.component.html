@@ -2,8 +2,9 @@
 
 <form (ngSubmit)="onSubmit()" #myForm="ngForm">
   <p>
-    <label for="number">Cost of Service?</label>
-    <input type="number" id="number" name="amount" value="1" min="5" max="200" required [(ngModel)]="userPreference.costOfService"/>
+    <label for="number">Cost of Service? </label>
+    <input type="number" id="number" name="amount" value="1" step="10" min="5" max="200" required [(ngModel)]="userPreference.costOfService"/>
+    <span class="validity"></span>
   </p>
   <p>
     <label><input type="radio" name="choice"
