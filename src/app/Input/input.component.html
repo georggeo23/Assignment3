@@ -1,10 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<h2>Input</h2>
 
-</body>
-</html>
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+  <p>
+    <label for="number">Cost of Service?</label>
+    <input type="number" id="number" name="amount" value="1" min="5" max="200" [(ngModel)]="userPreference.costOfService"/>
+  </p>
+  <p>
+    <label><input type="radio" name="choice"
+                  [value]="ServiceQuality.OKAY"
+                  [(ngModel)]="userPreference.serviceQuality"> Okay - 10%</label><br>
+    <label><input type="radio" name="choice"
+                  [value]="ServiceQuality.GOOD"
+                  [(ngModel)]="userPreference.serviceQuality"> Good - 15%</label><br>
+    <label><input type="radio" name="choice"
+                  [value]="ServiceQuality.EXCELLENT"
+                  [(ngModel)]="userPreference.serviceQuality"> Excellent - 20%</label>
+  </p>
+  <p>
+    <label><input type="checkbox" name="notSpicy" [(ngModel)]="userPreference.roundTip"> Round Tip</label>
+  </p>
+  <p>
+    <button type="submit" [disabled]="myForm.form.invalid">Submit</button>
+  </p>
+</form>
+
+<h3>You Entered</h3>
+<p>
+  User Name: {{userPreference.userName}}<br>
+  Service Cost: {{userPreference.costOfService}}<br>
+  Service Quality: {{userPreference.serviceQuality}}<br>
+  Round Tip: {{userPreference.roundTip}}<br>
+  The Input is Valid: {{myForm.form.valid}}
+</p>
+

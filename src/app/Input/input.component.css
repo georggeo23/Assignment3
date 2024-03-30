@@ -1,0 +1,21 @@
+main {
+  padding-left: 2em;
+  font-family: sans-serif;
+}
+
+h2 {
+  color: #00bcd4;
+}
+
+h3 {
+  color: lightcoral;
+}
+
+label{
+  color: #673ab7;
+}
+
+span.error{
+  color: crimson;
+  font-style: oblique;
+}

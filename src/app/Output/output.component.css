@@ -1,0 +1,14 @@
+p.message{
+  color: #ff9800;
+  font-weight: bolder;
+  font-size: larger;
+  font-style: oblique;
+}
+
+h2 {
+  color: #00bcd4;
+}
+
+span.label{
+  color: #673ab7;
+}

@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<h2>Output</h2>
+<p class="message">
+  Thank you submitting your meal preference!
+</p>
+<p>
+  <span class="label">Your Name:</span> {{userPreference.userName}}
+</p>
+<p>
+  <span class="label">Service Cost:</span> {{userPreference.costOfService}}
+</p>
+<p>
+  <span class="label">Service Quality:</span> {{userPreference.serviceQuality}}
+</p>
+<p>
+  <span class="label">Round Tip:</span> {{userPreference.roundTip?"Yes":"No"}}
+</p>
+<p>
+  <span class="label">Calculated Tip:</span> {{userPreference.calculateTip()}}
+</p>
+<p>
+  <span class="label">Calculated Total Bill:</span> {{userPreference.calculateTotalBill()}}
+</p>
+<a routerLink="/input">Back to Input</a>
