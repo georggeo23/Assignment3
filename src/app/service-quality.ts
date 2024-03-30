@@ -1,3 +1,3 @@
 export enum ServiceQuality {
-  OKAY = 0.10, GOOD = 0.25, EXCELLENT = 0.20
+  OKAY = 0.10, GOOD = 0.15, EXCELLENT = 0.20
 }

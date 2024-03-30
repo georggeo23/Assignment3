@@ -21,7 +21,6 @@ class TipCalculator {
   }
 }
 export class UserPreference {
-  userName: string = "";
   costOfService: number=0;
   serviceQuality: ServiceQuality = ServiceQuality.GOOD;
   roundTip: boolean = false;
