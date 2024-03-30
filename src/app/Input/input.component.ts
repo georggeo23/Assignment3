@@ -19,7 +19,6 @@ export class InputComponent {
   protected readonly MealChoice = ServiceQuality;
 
   onSubmit(): void {
-    this.userPreference.userName = this.userPreference.userName.trim();
     this.service.submitUserPreference(this.userPreference);
     this.router.navigate(["/output"]);
   }
