@@ -1,14 +1,15 @@
 footer {
   font-family: "Baskerville Old Face", sans-serif;
+  background-color: #f1f1f1;
   font-size: 1.2em;
   font-style: italic;
   font-weight: bolder;
   border-top: #0cacfc solid;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin-left: 3em;
-  padding-left: 3em;
-  margin-top: 3.5em;
+  margin-left: .5em;
+  padding-left: 1em;
+  margin-top: 0.7em;
   width: 700px;
   color: #546e7a;
 }
